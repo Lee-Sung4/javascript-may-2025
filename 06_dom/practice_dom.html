@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        .content{
+            color:orange;
+        }
+        .newClass {
+            background-color: blueviolet;
+        }
+        .font-style{
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nihil fuga deserunt!</p>
+    </div>
+
+    <script>
+        let button = document.createElement("button");
+        button.style.backgroundColor = "red";
+        button.style.color = "white";
+        button.innerText = "click me";
+
+
+        let container = document.querySelector(".container");
+        container.prepend(button);
+
+        let para = document.querySelector("p");
+        // setAttribute remove the old class
+        // para.setAttribute("class", "newClass");
+
+
+        // add multiple class using classList
+        para.classList.add("newClass", "font-style")
+        // para.classList.remove("content", "newClass", "font-style")
+    </script>
+</body>
+</html>
