@@ -1,0 +1,32 @@
+/*  */
+
+.container{
+    text-align: center;
+    
+}
+span{
+    display: block;
+}
+
+.button{
+    height: 100px;
+    width: 100px;
+    margin: 3px;
+    border: 2px solid black;
+    display: inline-block;
+}
+#yellow {
+    background-color: yellow;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#grey {
+    background-color: grey;
+}
+
+#blueviolet{
+    background-color: blueviolet;
+}
